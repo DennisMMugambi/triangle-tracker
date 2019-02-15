@@ -10,7 +10,7 @@ function triangleChecker(){
   triangle = [newHeight,newLength,newWidth];
 
   if((triangle[0] > 0) && (triangle[1] > 0) && (triangle[2] > 0)){
-    if ((triangle[0] + triangle[1]) <= triangle[3]) || (triangle[0] + triangle[2] <= triangle[1]) || (triangle[1] + triangle[2]) <= triangle[0]){
+    if ((triangle[0] + triangle[1] <= triangle[2]) || (triangle[0] + triangle[2] <= triangle[1]) || (triangle[1] + triangle[2]) <= triangle[0]){
       alert("A triangle cannot be formed");
     } else {
       if(triangle[0] === triangle[1] && triangle[1] === triangle[2]){
