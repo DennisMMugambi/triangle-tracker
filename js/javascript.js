@@ -7,5 +7,12 @@ function triangleChecker(){
   var newWidth = parseInt(width);
   var triangle = [];
   triangle = [newHeight,newLength,newWidth];
-  alert(triangle);
+
+  if ((triangle[0] + triangle[1]) <= triangle[3] || (triangle[0] + triangle[2] <= triangle[1])){
+    alert("a triangle cannot be formed");
+  } else if ((triangle[1] + triangle[2]) <= triangle[0]){
+    alert("a triangle cannot be formed");
+  } else {
+    alert("a triangle can be formed");
+  }
 }
